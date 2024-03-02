@@ -1,0 +1,90 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.popupbtn{
+  display: flex;
+  justify-content: center;
+  margin-top: 50vh;
+}
+
+.blur {
+  filter: blur(5px); /* Add blur effect to the background */
+}
+
+.showpopup{
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding: 10px 0 10px 0;
+  max-width: 50%;
+  gap: 10px;
+  margin: auto;
+  z-index: 50 !important;
+  opacity: 1;
+  animation: popupanimation 1s forwards;
+}
+
+.showpopup img{
+  width: 15px;
+  margin-left: auto;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.showpopup img:hover{
+  scale: 0.95;
+}
+
+.showpopup button{
+  margin-left: auto;
+  margin-right: 1vw;
+  border-radius: 5px;
+  border: solid 1px rgb(206, 206, 206);
+  padding: 5px 10px 5px 10px;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.showpopup button:hover{
+  background-color: hsl(0, 0%, 85%);
+}
+
+.showpopup h1,
+.showpopup p{
+  text-align: center;
+  max-width: 600px;
+  padding-bottom: 50px;
+  margin: auto;
+}
+
+.closepopup{
+  animation: popupanimation-out 1s forwards;
+}
+
+@keyframes popupanimation {
+  from {
+    opacity: 0;
+    transform: translateY(-25%);
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes popupanimation-out {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    transform: translateY(50%);
+    display: none;
+  }
+}
