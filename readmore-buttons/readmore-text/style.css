@@ -1,0 +1,17 @@
+body{
+  background-color: #f1f1f1;
+}
+
+#readtxt {
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+#content-text{
+  max-width: 700px;
+}
+
+.text-container{
+  max-width: 100px;
+  text-decoration: underline;
+}
