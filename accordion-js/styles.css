@@ -1,0 +1,50 @@
+.accordian{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  text-align: left;
+}
+
+.col-1{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-family: 'Poppins', 'sans-serif';
+}
+
+.col-1 button{
+  padding: 1vh 30vw 1vh 30vw;
+  transition: 0.3s;
+  cursor: pointer;
+  border: solid 1px hsla(0, 0%, 11%, 0.388);
+  background-color: hsl(211, 100%, 79%);
+}
+
+.col-1 label{
+  text-align: left;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.col-1 p{
+  display: none;
+  max-width: 70%;
+  font-size: 13px;
+  color: hsl(0, 0%, 34%);
+}
+
+.show-col-1 p,
+.show-col-2 p,
+.show-col-3 p{
+  transition: 0.3s;
+  display: block;
+}
+
+.show-col-1 button,
+.show-col-2 button,
+.show-col-3 button {
+  transition: 0.3s;
+  background-color: #379eff;
+  color: #ffffff;
+}
