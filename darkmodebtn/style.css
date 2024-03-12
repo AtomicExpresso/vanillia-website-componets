@@ -1,0 +1,26 @@
+body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: sans-serif;
+  transition: 0.4s;
+}
+
+#drk-btn {
+  border-radius: 50%;
+  background-color: hsl(0, 0%, 100%);
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding: 20px;
+  transition: 0.4s;
+}
+
+#dark-btn-container img {
+  height: 30px;
+  width: 30px;
+}
+
+#drk-btn:hover {
+  cursor: pointer;
+  background-color: rgb(241, 241, 241);
+  Scale: 0.95;
+}
